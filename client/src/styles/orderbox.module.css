@@ -1,0 +1,113 @@
+
+/* orderbox design */
+.orderbox{
+    width: calc(100vw - 60px);
+    /* margin: auto; */
+    margin-left: 60px;
+    height: 80px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+  }
+  .orderbox .leftside{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    width: 80%;
+  }
+  .orderbox .rightside{
+    width: 20%;
+  }
+  .orderbox .rightside button{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 5px 20px;
+    letter-spacing: 1px;
+  }
+  .rightside button:hover{
+    background-color: #a2a2a2;
+  }
+
+  @media screen and (max-width: 1280px) {
+    .orderbox{
+        width: 100%;
+        height: 80px;
+        padding: 10px 10px;
+       }
+       .orderbox .leftside{
+        font-size: 30px;
+        width: 70%;
+        text-align: center;
+       }
+       .orderbox .rightside{
+        width: 30%;
+        text-align: center;
+       }
+       .orderbox .rightside button{
+        font-size: 20px;
+        padding: 5px 15px;
+       }
+  }
+  @media screen and (max-width: 1120px) {
+    .orderbox{
+        width: 100%;
+        height: 80px;
+        padding: 10px 10px;
+       }
+       .orderbox .leftside{
+        font-size: 30px;
+        width: 70%;
+        text-align: center;
+       }
+       .orderbox .rightside{
+        width: 30%;
+        text-align: center;
+       }
+       .orderbox .rightside button{
+        font-size: 20px;
+        padding: 5px 15px;
+       }
+  }
+  @media screen and (max-width: 800px) {
+    .orderbox{
+        width: 100%;
+        height: 80px;
+        padding: 10px 10px;
+       }
+       .orderbox .leftside{
+        font-size: 24px;
+        width: 70%;
+        text-align: center;
+       }
+       .orderbox .rightside{
+        width: 30%;
+        text-align: center;
+       }
+       .orderbox .rightside button{
+        font-size: 20px;
+        padding: 5px 15px;
+       }
+  }
+  @media screen and (max-width: 500px) {
+    .orderbox{
+        width: 100%;
+        height: 80px;
+        padding: 10px 10px;
+       }
+       .orderbox .leftside{
+        font-size: 15px;
+        width: 60%;
+       }
+       .orderbox .rightside{
+        width: 40%;
+        text-align: center;
+       }
+       .orderbox .rightside button{
+        font-size: 16px;
+        padding: 5px 10px;
+       }
+  }

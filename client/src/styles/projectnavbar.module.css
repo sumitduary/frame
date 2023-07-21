@@ -1,0 +1,57 @@
+
+.projectnavbar {
+    background: #000;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 5px 20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  .projectnavbar .navbaricon {
+    font-size: 30px;
+    color: #fff;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .projectnavbar .navbarclose {
+    font-size: 30px;
+    color: #fff;
+  }
+  .projectnavbar .navbarclose i:hover {
+    color: #c9c9c9;
+  }
+  .projectnavbar .navbaricon i:hover {
+    color: #c9c9c9;
+  }
+  .projectnavbar .navbarlogoimage {
+    width: 170px;
+    height: 40px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    .projectnavbar {
+        width: 100vw;
+      }
+  }
+  @media screen and (max-width: 1120px) {
+    .projectnavbar {
+        width: 100vw;
+      }
+  }
+  @media screen and (max-width: 800px) {
+    .projectnavbar {
+        width: 100%;
+      }
+  }
+  @media screen and (max-width: 500px) {
+    .projectnavbar {
+        width: 100%;
+      }
+  }

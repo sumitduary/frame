@@ -1,0 +1,93 @@
+
+.cardbody{
+    height: 350px;
+    margin-right: 15px;
+}
+
+.card{
+    height: 300px;
+
+}
+.cardbody .card .top{
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+.cardbody .card .bottom{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.cardbody .top .cardimage{
+    width: 100% !important;
+    height: 100%;
+
+}
+.bottom .cardtitle{
+    width: 100%;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: relative;
+}
+.bottom .cardtext{
+    text-align: justify;
+    font-size: 12px;
+    overflow: hidden;
+    display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -moz-line-clamp: 2;
+  -moz-box-orient: vertical;
+}
+.bottom .cardlink button{
+    border: none;
+    background-color: none;
+    background: none;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: lowercase;
+    color: #797979;
+}
+.bottom .cardlink button:hover{
+    color: #000;
+}
+
+.top::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    height: 0;
+  }
+ .top:hover::after {
+    height: 100%;
+    transition: all 0.5s ease;
+  }
+ .top .text {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -10%);
+    display: none;
+  }
+ .top:hover .text {
+    display: block;
+    z-index: 9;
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .carouselbody{
+        padding: 10px 0;
+    }
+  }

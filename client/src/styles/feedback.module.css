@@ -1,0 +1,224 @@
+.mainbody{
+    width: calc(100% - 60px);
+    margin-left: 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+
+    & .top{
+        width: 100%;
+        height: 50px;
+        position: relative;
+    
+        & .closebtn{
+          position: absolute;
+          top: 50px;
+          left: 50px;
+          border: none;
+          background: none;
+          font-weight: 600;
+          font-size: 20px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+        }
+       & .closebtn .leftarrow{
+          margin-right: 10px;
+        }
+      }
+}
+.middle{
+    width: 100%;
+    height: calc(100% - 100px);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &  .middlebody{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+
+        & .title{
+            font-size: 50px;
+            letter-spacing: 5px;
+            text-transform: lowercase;
+            height: 100px;
+            position: relative;
+        }
+        & .subtitle{
+    letter-spacing: 1px;
+    text-align: justify;
+}
+    }
+}
+
+
+.middle .middlebody .form{
+height: 800px;
+width: 100%;
+display:flex ;
+flex-direction: column;
+justify-content: space-between;
+/* align-items: center; */
+/* background: #000; */
+/* color: #fff; */
+}
+.form .inputfield{
+    height: 50px;
+    margin: 40px 0;
+    font-size: 25px;
+}
+
+ .formfield{
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #000;
+    outline: 0;
+    font-size: 1.3rem;
+    padding: 20px 0 3px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    position: relative;
+}
+ .formfield::placeholder {
+    color: transparent;
+  }
+   .formfield:placeholder-shown ~ .formlabel {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+   .formlabel{
+    position: absolute;
+    /* top: 0; */
+
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: gray;
+    text-transform: lowercase;
+    /* color: rgb(26, 255, 0); */
+}
+ .submit, .reset{
+    padding: 10px 20px;
+    width: 200px;
+    font-weight: 900;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(26, 255, 0);
+}
+.submit{
+    margin-right: 40px;
+}
+ .submit:hover{
+    border-radius: 50px;
+}
+ .reset:hover{
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 1080px) {
+    .mainbody{
+      height: 100%;
+      width: calc(100% - 60px);
+      padding: 0;
+      margin-left: 60px;
+
+      & .top{
+        width: 100%;
+        height: 50px;
+        padding: 0;
+        /* margin-bottom: 20px; */
+  
+        & .closebtn{
+          top: 30px;
+          left: 30px;
+        }
+      }
+
+     & .middle{
+        margin: 40px 0 30px 0;
+        width: 80%;
+        & .middlebody{
+            width: 100%;
+            padding: 30px;
+          }
+     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+    .mainbody{
+      height: 100%;
+      width: calc(100% - 60px);
+      padding: 0;
+      margin-left: 60px;
+
+      & .top{
+        width: 100%;
+        height: 50px;
+        padding: 0;
+        /* margin-bottom: 20px; */
+  
+        & .closebtn{
+          top: 30px;
+          left: 30px;
+        }
+      }
+
+     & .middle{
+        margin: 40px 0 30px 0;
+        width: 100%;
+        & .middlebody{
+            width: 100%;
+            padding: 30px;
+          }
+     }
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .mainbody{
+      width: 100%;
+      height: calc(100% - 60px);
+      padding: 0;
+      margin: 0;
+
+      & .top{
+        width: 100%;
+        height: 50px;
+        padding: 0;
+        /* margin-bottom: 20px; */
+  
+        & .closebtn{
+          top: 25px;
+          left: 30px;
+        }
+      }
+
+     & .middle{
+        margin: 40px 0 30px 0;
+        width: 100%;
+        & .middlebody{
+            width: 100%;
+            padding: 30px;
+          }
+     }
+
+  }
+}

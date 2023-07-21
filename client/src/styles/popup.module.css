@@ -1,0 +1,235 @@
+.advertisementbody{
+    width: 800px;
+    height: 500px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    z-index: 99;
+    position: fixed;
+    top: 16%;
+    left: 20%;
+}
+.advertisementbody .body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.imagebody{
+    width: 800px;
+    height: 440px;
+}
+.closebutton{
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    font-size: 40px;
+    color: rgb(26, 255, 0);
+    z-index: 999;
+    cursor: pointer;
+}
+.orderbox{
+    width: 100%;
+    height: 60px;
+    background: #000;
+    color: #fff;
+    z-index: 99;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.orderbox p{
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.orderbox button{
+    padding: 10px 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    background: rgb(26, 255, 0);
+}
+
+@media screen and (max-width: 1080px){
+    .advertisementbody{
+        width: 700px;
+       left: 20%;
+       height: 410px;
+    }
+    .imagebody{
+        height: 350px;
+    }
+    .orderbox{
+        height: 80px;
+        font-size: 14px;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        height: 90px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    }
+
+@media screen and (max-width: 800px){
+.advertisementbody{
+    width: 525px;
+   left: 70px;
+   height: 410px;
+}
+.imagebody{
+    height: 350px;
+}
+.orderbox{
+    height: 80px;
+    font-size: 14px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .advertisementbody{
+        width: 100%;
+        z-index: 9999;
+        position: fixed;
+        top: 200px;
+        left: 0;
+        height: 390px;
+        /* padding: 40px 20px; */
+    }
+    .imagebody{
+        width: 100%;
+        height: 300px;
+    }
+    .closebutton{
+        top: -50px;
+        right: 5px;
+        color: #000;
+    }
+    .orderbox{
+       width: 100%;
+       font-size: 14px;
+       padding: 10px 10px;
+       display: flex;
+       flex-direction: column;
+       height: 90px;
+       justify-content: space-between;
+       align-items: center;
+       bottom: 0;
+       /* left: 2%; */
+    }
+}
+
+
+
+
+
+
+
+/* feedback popup module css  */
+.feedbackpopupbody{
+    width: 420px;
+    height: 380px;
+    background: #000;
+    z-index: 9;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.feedbackpopupbody .feedbacktop{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+.feedbackpopupbody .feedbacktop .image{
+    width: 200px;
+    height: 100%;
+}
+.feedbackpopupbody .feedbacktop span{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 40px;
+    color: rgb(26, 255, 0);
+    cursor: pointer;
+    /* background: rgb(26, 255, 0); */
+}
+.feedbackpopupbody .feedbacktop span:hover{
+    color:#fff;
+}
+.feedbackpopupbody .feedbackbottom{
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 9px;
+    text-align: center;
+}
+.feedbackpopupbody .feedbackmiddle{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px solid #fff; */
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+.feedbackmiddle .middle1{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.feedbackmiddle .middle2{
+    font-size: 15px;
+    text-transform: lowercase;
+    /* text-align: justify; */
+}
+.feedbackmiddle .middle3{
+    display: flex;
+    flex-direction: column;
+}
+.feedbackmiddle .middle3 button{
+text-transform: uppercase;
+padding: 8px 20px;
+font-weight: 900;
+margin: 5px;
+background: rgb(26, 255, 0);
+border: none;
+cursor: pointer;
+}
+.feedbackmiddle .middle3 button:hover{
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .feedbackpopupbody{
+        top: 100px;
+    }
+}
